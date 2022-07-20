@@ -1,0 +1,46 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+button {
+  margin-left: 1rem;
+  padding: 0.4rem 1rem;
+  background-color: crimson;
+  border: 2px solid crimson;
+  border-radius: 6px;
+  color: whitesmoke;
+  box-shadow: 4px 4px 4px darkgray;
+}
+
+button:hover {
+  cursor: pointer;
+  box-shadow: none;
+  background-color: red;
+  border: 2px solid red;
+}
+
+input {
+  width: 47%;
+  padding: 0.6rem;
+  border-radius: 6px;
+  border: 1px solid darkgray;
+}
+
+.todos {
+  margin: 2rem auto;
+}
+
+.todo {
+  display: flex;
+  width: 70%;
+  margin: 0 auto;
+  max-height: 35px;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0.8rem auto;
+}
+
+#todos-title {
+  font-weight: bold;
+}
