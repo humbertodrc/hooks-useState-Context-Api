@@ -1,8 +1,16 @@
-export const Todo = ({todo}) => {
+import { useContext } from 'react';
+import { TodosContext } from '../context/TodosContext';
+
+export const Todo = ({ todo }) => {
+	
+	const { eliminarTodos } = useContext(TodosContext)
+	
+
+
 	return (
 		<div className="todo">
 			<p>{todo.nombre}</p>
-			<button onClick={console.log("Eliminamos la tarea :)")}>Eliminar</button>
+			<button onClick={() => eliminarTodos(todo.id)}>Eliminar</button>
 		</div>
 	);
 };
